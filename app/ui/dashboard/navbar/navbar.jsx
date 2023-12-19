@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import style from "./navbar.module.css"
+import styles from "./navbar.module.css"
 import {
   MdNotifications,
   MdOutlineChat,
@@ -13,18 +13,18 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <div className={style.container}>
-      <div className={style.title}>{pathname.split("/").pop()}</div>
-      <div className={style.menu}>
-        <div className={style.search}>
+    <div className={styles.container}>
+      <div className={styles.title}>{pathname.split("/").pop()}</div>
+      <div className={styles.menu}>
+        <div className={styles.search}>
           <MdSearch />
           <input
             type="text"
             placeholder="Search..."
-            className={style.searchInput}
+            className={styles.searchInput}
           />
         </div>
-        <div className={style.icons}>
+        <div className={styles.icons}>
           <MdOutlineChat size={20} />
           <MdNotifications size={20} />
           <MdPublic size={20} />

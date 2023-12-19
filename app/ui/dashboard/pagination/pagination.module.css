@@ -1,0 +1,16 @@
+.container {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
