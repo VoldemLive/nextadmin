@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema(
     },
     img: {
       type: String,
-      default: "noavatar.png",
+      default: "",
     },
     isAdmin: {
       type: Boolean,
@@ -73,6 +73,10 @@ const ProductSchema = new mongoose.Schema(
     },
     size: {
       type: String,
+    },
+    img: {
+      type: String,
+      default: "",
     },
     description: {
       type: String,
